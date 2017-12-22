@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   # get 'demo/index'
-
+  root 'demo#index'
   ##  DEFAULT ROUTE...Will generate default values if no matches..things in() are optional if not used or available..catchall route not really used anymore, put at bottom if used can also add (.:format) after id to specify a format ##
-    match ':controller(/:action(/:id))', :via => :get
+    match ':controller(/:action(/:id(.:format)))', :via => :get
   
 
   ##  ROOT ROUTE...if no text to match routing
