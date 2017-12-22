@@ -7,7 +7,10 @@ Rails.application.routes.draw do
 
   ##  ROOT ROUTE...if no text to match routing
   ##  root :to => "demo#index"
+  
   ##  or shorthand (just root&string)  
   ##  root "demo#index"
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
